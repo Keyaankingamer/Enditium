@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "enditium:enditium"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "enditium:enditium"
+      }
+    ]
+  }
+}

@@ -24,6 +24,7 @@ public class Enditium implements ModInitializer {
 		LOGGER.info("Enditium has been initialized :D");
 		EnditiumItems.init();
 		EnditiumBlocks.init();
+		EnditiumArmor.ArmorInit.Init();
 	}
 
 	public static Identifier id(String path) {

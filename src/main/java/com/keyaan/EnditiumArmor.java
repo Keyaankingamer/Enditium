@@ -67,28 +67,40 @@ public class EnditiumArmor {
                     registryHelper.registerArmor(
                             "enditium_helmet",
                             ENDITIUM_ARMOR,
-                            ArmorType.HELMET
+                            ArmorType.HELMET,
+                            new Item.Properties()
+                                    .rarity(Rarity.EPIC)
                         );
 
         public static final Item ENDITIUM_CHESTPLATE =
                 registryHelper.registerArmor(
                         "enditium_chestplate",
                         ENDITIUM_ARMOR,
-                        ArmorType.HELMET
+                        ArmorType.CHESTPLATE,
+                        new Item.Properties()
+                                .rarity(Rarity.EPIC)
                 );
 
         public static final Item ENDITIUM_LEGGINGS =
                 registryHelper.registerArmor(
                         "enditium_leggings",
                         ENDITIUM_ARMOR,
-                        ArmorType.HELMET
+                        ArmorType.LEGGINGS,
+                        new Item.Properties()
+                                .rarity(Rarity.EPIC)
                 );
 
         public static final Item ENDITIUM_BOOTS =
                 registryHelper.registerArmor(
                         "enditium_boots",
                         ENDITIUM_ARMOR,
-                        ArmorType.HELMET
+                        ArmorType.BOOTS,
+                        new Item.Properties()
+                                .rarity(Rarity.EPIC)
                 );
+        public static void Init() {
+
+        }
     }
+
 }

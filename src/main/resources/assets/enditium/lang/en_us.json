@@ -6,5 +6,10 @@
   "item.enditium.detritus_clump": "Detrius Clump",
   "item.enditium.detritus": "Detrius",
   "item.enditium.etherstone_plate": "Etherstone Plates",
-  "item.enditium.ether_resin_nugget": "Ether Resin Nugget"
+  "item.enditium.ether_resin_nugget": "Ether Resin Nugget",
+  "item.enditium.enditium_boots": "Enditium Boots",
+  "item.enditium.enditium_chestplate": "Enditium Chestplate",
+  "item.enditium.enditium_leggings": "Enditium Leggings",
+  "item.enditium.enditium_helmet": "Enditium Helmet",
+  "item.enditium.enditium": "Enditium Ingot"
 }

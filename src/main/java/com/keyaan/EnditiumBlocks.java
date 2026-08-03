@@ -2,6 +2,8 @@ package com.keyaan;
 
 import com.bananaman.api.RegistryHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -51,7 +53,9 @@ public class EnditiumBlocks {
                     BlockBehaviour.Properties.of()
                             .sound(SoundType.ANCIENT_DEBRIS)
                             .destroyTime(20)
-                            .requiresCorrectToolForDrops()
+                            .requiresCorrectToolForDrops(),
+                            new Item.Properties()
+                                    .rarity(Rarity.EPIC)
             );
 
     //Load the script you lazy ass fucking bum
