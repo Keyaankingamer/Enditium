@@ -2,7 +2,7 @@
   "item.enditium.ether_resin": "Ether Resin",
   "item.enditium.etherstone": "Etherstone",
   "item.enditium.boiled_etherstone": "Boiled Etherstone",
-  "item.enditium.boiled_resin_etherstone": "Boiled Resin-Filled Etherstone",
+  "item.enditium.boiled_resin_etherstone": "Boiled Resinous Etherstone",
   "item.enditium.detritus_clump": "Detrius Clump",
   "item.enditium.detritus": "Detrius",
   "item.enditium.etherstone_plate": "Etherstone Plates",
@@ -11,5 +11,10 @@
   "item.enditium.enditium_chestplate": "Enditium Chestplate",
   "item.enditium.enditium_leggings": "Enditium Leggings",
   "item.enditium.enditium_helmet": "Enditium Helmet",
-  "item.enditium.enditium": "Enditium Ingot"
+  "item.enditium.enditium": "Enditium Ingot",
+  "item.enditium.enditium_upgrade_template": "Enditium Upgrade",
+  "item.enditium.ether_upgrade.addition_slot": "Add Enditium Ingot",
+  "item.enditium.ether_upgrade.base_slot": "Add Netherite Armor",
+  "item.enditium.ether_upgrade.ingredients": "Enditium Ingot",
+  "item.enditium.ether_upgrade.applies_to": "Netherite Armor"
 }

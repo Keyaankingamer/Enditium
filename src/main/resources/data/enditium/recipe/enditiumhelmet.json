@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:netherite_helmet",
+  "addition": "enditium:enditium",
+  "template": "enditium:enditium_upgrade_template",
+  "result": {
+    "id": "enditium:enditium_helmet"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    [
+      "enditium:detritus"
+    ],
+    [
+      "enditium:etherstone_plate"
+    ],
+    [
+      "enditium:etherstone_plate"
+    ],
+    [
+      "enditium:etherstone_plate"
+    ],
+    [
+      "enditium:etherstone_plate"
+    ],
+    [
+      "enditium:ether_resin"
+    ],
+    [
+      "enditium:ether_resin"
+    ],
+    [
+      "enditium:ether_resin"
+    ],
+    [
+      "enditium:ether_resin"
+    ]
+  ],
+  "result": {
+    "id": "enditium:enditium"
+  }
+}

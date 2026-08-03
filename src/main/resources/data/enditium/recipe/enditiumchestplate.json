@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "base": "minecraft:netherite_chestplate",
+  "addition": "enditium:enditium",
+  "template": "enditium:enditium_upgrade_template",
+  "result": {
+    "id": "enditium:enditium_chestplate"
+  }
+}
