@@ -50,15 +50,15 @@ public class EnditiumArmor {
                 new ArmorMaterial(
                         37,
                         Util.make(new EnumMap<ArmorType, Integer>(ArmorType.class), map -> {
-                            map.put(ArmorType.HELMET, 3);
+                            map.put(ArmorType.HELMET, 4);
                             map.put(ArmorType.CHESTPLATE, 8);
-                            map.put(ArmorType.LEGGINGS, 6);
-                            map.put(ArmorType.BOOTS, 3);
+                            map.put(ArmorType.LEGGINGS, 7);
+                            map.put(ArmorType.BOOTS, 4);
                         }),
                         10,
                         SoundEvents.ARMOR_EQUIP_NETHERITE,
-                        2.0F,
-                        0.0F,
+                        3.0F,
+                        1.5F,
                         EnditiumTags.Tags.ENDITIUM_ARMOR_REPAIR,
                         ENDITIUM_ARMOR_ASSET
                 );

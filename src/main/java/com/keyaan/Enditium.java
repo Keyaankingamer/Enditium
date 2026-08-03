@@ -25,6 +25,7 @@ public class Enditium implements ModInitializer {
 		EnditiumItems.init();
 		EnditiumBlocks.init();
 		EnditiumArmor.ArmorInit.Init();
+		BoiledEtherstoneResinRemove.Init();
 	}
 
 	public static Identifier id(String path) {
