@@ -1,22 +1,17 @@
 package com.keyaan;
 
-import com.mojang.logging.LogUtils;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.item.ItemEntity;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.phys.Vec3;
-import org.slf4j.Logger;
 
 public class BoiledEtherstoneResinRemove {
     public static void Init() {
