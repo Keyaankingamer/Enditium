@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "top": "enditium:block/detritus_clump_top",
+    "side": "enditium:block/detritus_clump_side",
+    "bottom": "enditium:block/detritus_clump_top"
+  }
+}

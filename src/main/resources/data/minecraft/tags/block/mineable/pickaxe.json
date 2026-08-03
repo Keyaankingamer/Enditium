@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enditium:etherstone",
+    "enditium:boiled_etherstone",
+    "enditium:boiled_resin_etherstone",
+    "enditium:detritus_clump"
+  ]
+}
