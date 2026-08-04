@@ -2,10 +2,18 @@ package com.keyaan;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
+import net.minecraft.server.level.ServerLevel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import static net.fabricmc.loader.impl.FabricLoaderImpl.MOD_ID;
 
 public class Enditium implements ModInitializer {
 	public static final String MOD_ID = "enditium";
@@ -26,8 +34,8 @@ public class Enditium implements ModInitializer {
 		EnditiumBlocks.init();
 		EnditiumArmor.ArmorInit.Init();
 		BoiledEtherstoneResinRemove.Init();
+		CrouchTest.Init();
 	}
-
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
 	}
