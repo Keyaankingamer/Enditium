@@ -7,7 +7,9 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
@@ -26,7 +28,9 @@ public class SpikesSpawn {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public static void placeSpike(ServerLevel world, BlockPos pos) {
-        for(int tries = 0; tries < 20; tries++) {
+        int tries;
+        for (tries = 0; tries < 20; tries++) {
+        //LOGGER.warn("Trying to place spike at position " + pos);
         int spikeNumberToSpawn = world.getRandom().nextInt(1, 5);
         String spikeToSpawn = "etherstone_spike_" + spikeNumberToSpawn;
         //Get the structure manager from the server
@@ -37,6 +41,7 @@ public class SpikesSpawn {
                 Identifier.fromNamespaceAndPath(Enditium.MOD_ID, spikeToSpawn)
         );
         if (!SpikeCheck.isEmpty()) {
+            //LOGGER.warn("Loaded Spike structure file");
             //If it do, randomize the positions
             int x = pos.getX()+world.getRandom().nextInt(30, 100);
             int z = pos.getZ()+world.getRandom().nextInt(30, 100);
@@ -44,22 +49,26 @@ public class SpikesSpawn {
             //Turn the structuretemplatemanager into a structure template
             StructureTemplate Spike = SpikeCheck.get();
             //Finally, place the structure!
-            BlockPos SpikePos = new  BlockPos(x, y-5, z);
-            if (!world.getBlockState(SpikePos).isAir()) {
+            BlockPos SpikePos = new  BlockPos(x-4, y-1, z+4);
+            Block SurfaceBlock = world.getBlockState(SpikePos).getBlock();
+            if  (SurfaceBlock == Blocks.END_STONE) {
+                //LOGGER.warn("Placed spike at " + pos);
                 Spike.placeInWorld(
-                        world,
-                        SpikePos,
-                        pos,
-                        new StructurePlaceSettings()
-                                .setRotation(Rotation.getRandom(world.getRandom())),
-                        world.getRandom(),
-                        Block.UPDATE_ALL
+                    world,
+                    //When placing the spike I fix the positions cuz "spikepos" is actually the middle of the spike so it can check if thats okay to spawn the middle there and i didnt wanna have 2 variables
+                    new BlockPos(SpikePos.getX()+4, SpikePos.getY() - 4, SpikePos.getZ()-4),
+                    pos,
+                    new StructurePlaceSettings(),
+                            //.setRotation(Rotation.getRandom(world.getRandom())),
+                    world.getRandom(),
+                    Block.UPDATE_ALL
                 );
+                return;
             }
             else {
-                placeSpike(world, pos);
-            }
+                //LOGGER.warn("Could not place spike");
             }
         }
     }
-};
+}
+}
