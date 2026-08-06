@@ -34,7 +34,8 @@ public class Enditium implements ModInitializer {
 		EnditiumBlocks.init();
 		EnditiumArmor.ArmorInit.Init();
 		BoiledEtherstoneResinRemove.Init();
-		CrouchTest.Init();
+		SpikeFeature.RegisterSpike();
+		SpikeSpawnEnd.generate();
 	}
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
