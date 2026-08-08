@@ -1,6 +1,0 @@
-{
-  "type": "fabric:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": "owo-playground:awesomeblock",
-  "step": "underground_ores"
-}

@@ -12,6 +12,8 @@ import net.minecraft.core.registries.Registries;
 
 import java.util.concurrent.CompletableFuture;
 
+//I am legit never writing datagen again bro writing JSON is completly fine by me cuz less java the better lmao
+
 public class EnditiumDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {

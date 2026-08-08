@@ -1,16 +1,16 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 64,
-    "discard_chance_on_air_exposure": 0,
+    "size": 3,
+    "discard_chance_on_air_exposure": 0.8,
     "targets": [
       {
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "minecraft:stone"
+          "block": "minecraft:end_stone"
         },
         "state": {
-          "Name": "owo-playground:awesome_block"
+          "Name": "enditium:detritus_clump"
         }
       }
     ]

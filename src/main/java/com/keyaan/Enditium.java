@@ -2,6 +2,8 @@ package com.keyaan;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
@@ -10,6 +12,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.levelgen.GenerationStep;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -36,6 +39,11 @@ public class Enditium implements ModInitializer {
 		BoiledEtherstoneResinRemove.Init();
 		SpikeFeature.RegisterSpike();
 		SpikeSpawnEnd.generate();
+		BiomeModifications.addFeature(
+				BiomeSelectors.foundInTheEnd(),
+				GenerationStep.Decoration.UNDERGROUND_ORES,
+				GenerationRegistry.DETRIUSCLUMP
+		);
 	}
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);

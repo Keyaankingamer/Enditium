@@ -1,0 +1,6 @@
+{
+  "type": "fabric:add_features",
+  "biomes": "#minecraft:is_end",
+  "features": "enditium:detritus_clump",
+  "step": "underground_ores"
+}
