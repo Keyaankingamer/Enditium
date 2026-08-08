@@ -39,6 +39,7 @@ public class Enditium implements ModInitializer {
 		BoiledEtherstoneResinRemove.Init();
 		SpikeFeature.RegisterSpike();
 		SpikeSpawnEnd.generate();
+		UpgradeTemplateLootttable.Init();
 		BiomeModifications.addFeature(
 				BiomeSelectors.foundInTheEnd(),
 				GenerationStep.Decoration.UNDERGROUND_ORES,
