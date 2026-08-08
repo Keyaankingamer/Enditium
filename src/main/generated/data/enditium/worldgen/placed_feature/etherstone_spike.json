@@ -1,0 +1,20 @@
+{
+  "feature": "enditium:etherstone_spike",
+  "placement": [
+    {
+      "type": "minecraft:rarity_filter",
+      "chance": 800
+    },
+    {
+      "type": "minecraft:count",
+      "count": 3
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "WORLD_SURFACE"
+    }
+  ]
+}

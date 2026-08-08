@@ -9,6 +9,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
@@ -36,13 +37,10 @@ public class SpikeFeature extends Feature<NoneFeatureConfiguration> {
     public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
 
 
-        ServerLevel world = context.level().getLevel();
+        WorldGenLevel world = context.level();
         BlockPos position = context.origin();
 
-        SpikesSpawn.placeSpike(world, position);
-        SpikesSpawn.placeSpike(world, position);
-        SpikesSpawn.placeSpike(world, position);
-        SpikesSpawn.placeSpike(world, position);
+        SpikesSpawn.placeSpike(world, position, context.random());
 
         return true;
     }

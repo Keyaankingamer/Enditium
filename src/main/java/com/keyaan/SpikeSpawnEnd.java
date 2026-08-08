@@ -11,8 +11,11 @@ import net.minecraft.world.level.levelgen.GenerationStep;
 public class SpikeSpawnEnd {
     public static void generate() {
         BiomeModifications.addFeature(
-                BiomeSelectors.foundInTheEnd(),
-                GenerationStep.Decoration.LOCAL_MODIFICATIONS,
+                BiomeSelectors.includeByKey(
+                        Biomes.END_HIGHLANDS,
+                        Biomes.END_MIDLANDS
+                ),
+                GenerationStep.Decoration.VEGETAL_DECORATION,
                 SpikePlacedFeature.SPIKE_PLACED_KEY
         );
     }

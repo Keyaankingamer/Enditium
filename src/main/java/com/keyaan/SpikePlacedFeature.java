@@ -8,9 +8,10 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.placement.PlacedFeature;
+import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
@@ -23,12 +24,18 @@ public class SpikePlacedFeature {
                 context.lookup(Registries.CONFIGURED_FEATURE);
         Holder<ConfiguredFeature<?, ?>> spike =
                 configuredFeatures.getOrThrow(SpikeConfiguredFeature.SPIKE_CONFIGURED_KEY);
+        //End of the code thats not mine
 
         context.register(
                 SPIKE_PLACED_KEY,
                 new PlacedFeature(
                         spike,
-                        List.of()
+                        List.of(
+                                RarityFilter.onAverageOnceEvery(650),
+                                CountPlacement.of(3),
+                                InSquarePlacement.spread(),
+                                HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE)
+                        )
                 )
         );
 

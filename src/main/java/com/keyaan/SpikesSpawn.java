@@ -5,7 +5,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Position;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Rotation;
@@ -27,11 +29,11 @@ import org.slf4j.LoggerFactory;
 public class SpikesSpawn {
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public static void placeSpike(ServerLevel world, BlockPos pos) {
+    public static void placeSpike   (WorldGenLevel world, BlockPos pos, RandomSource random) {
         int tries;
         for (tries = 0; tries < 20; tries++) {
         //LOGGER.warn("Trying to place spike at position " + pos);
-        int spikeNumberToSpawn = world.getRandom().nextInt(1, 5);
+        int spikeNumberToSpawn = random.nextInt(1, 5);
         String spikeToSpawn = "etherstone_spike_" + spikeNumberToSpawn;
         //Get the structure manager from the server
         StructureTemplateManager structureManager = world.getServer().getStructureManager();
@@ -43,8 +45,8 @@ public class SpikesSpawn {
         if (!SpikeCheck.isEmpty()) {
             //LOGGER.warn("Loaded Spike structure file");
             //If it do, randomize the positions
-            int x = pos.getX()+world.getRandom().nextInt(30, 100);
-            int z = pos.getZ()+world.getRandom().nextInt(30, 100);
+            int x = pos.getX();
+            int z = pos.getZ();
             int y = world.getHeight(Heightmap.Types.WORLD_SURFACE, x, z);
             //Turn the structuretemplatemanager into a structure template
             StructureTemplate Spike = SpikeCheck.get();
@@ -59,16 +61,16 @@ public class SpikesSpawn {
                     new BlockPos(SpikePos.getX()+4, SpikePos.getY() - 4, SpikePos.getZ()-4),
                     pos,
                     new StructurePlaceSettings(),
-                            //.setRotation(Rotation.getRandom(world.getRandom())),
-                    world.getRandom(),
+                            //.setRotation(Rotation.getRandom(random)),
+                    random,
                     Block.UPDATE_ALL
                 );
                 return;
             }
             else {
                 //LOGGER.warn("Could not place spike");
+                }
             }
         }
     }
-}
 }
