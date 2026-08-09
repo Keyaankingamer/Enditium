@@ -40,6 +40,7 @@ public class Enditium implements ModInitializer {
 		SpikeFeature.RegisterSpike();
 		SpikeSpawnEnd.generate();
 		UpgradeTemplateLootttable.Init();
+		EnditiumArmorMechanics.init();
 		BiomeModifications.addFeature(
 				BiomeSelectors.foundInTheEnd(),
 				GenerationStep.Decoration.UNDERGROUND_ORES,
