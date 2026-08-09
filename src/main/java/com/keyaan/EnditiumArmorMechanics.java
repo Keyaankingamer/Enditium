@@ -2,6 +2,7 @@ package com.keyaan;
 
 import com.mojang.logging.LogUtils;
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
+import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -50,31 +51,37 @@ public class EnditiumArmorMechanics {
 
     }
     public static void SaveLife(Player player) {
-        player.setHealth(2.0F);
-        player.playSound(SoundEvents.TOTEM_USE);
-        player.playSound(SoundEvents.ANVIL_USE);
-        LOGGER.info("Ay you cant die");
-        player.addEffect(new MobEffectInstance(
-                MobEffects.REGENERATION,
-                45 * 20,
-                1
-        ));
-        player.addEffect(new MobEffectInstance(
-                MobEffects.RESISTANCE,
-                45 * 20,
-                1
-        ));
-        player.addEffect(new MobEffectInstance(
-                MobEffects.FIRE_RESISTANCE,
-                45 * 20,
-                1
-        ));
-        player.addEffect(new MobEffectInstance(
-                MobEffects.ABSORPTION,
-                45 * 20,
-                1
-        ));
-
+        if (!player.hasEffect(ArmorCooldown.ENDITIUM_RESONANCE)) {
+            player.setHealth(2.0F);
+            player.playSound(SoundEvents.TOTEM_USE);
+            player.playSound(SoundEvents.ANVIL_USE);
+            LOGGER.info("Ay you cant die");
+            player.addEffect(new MobEffectInstance(
+                    ArmorCooldown.ENDITIUM_RESONANCE,
+                    45 * 20,
+                    1
+            ));
+            player.addEffect(new MobEffectInstance(
+                    MobEffects.REGENERATION,
+                    45 * 20,
+                    1
+            ));
+            player.addEffect(new MobEffectInstance(
+                    MobEffects.RESISTANCE,
+                    45 * 20,
+                    1
+            ));
+            player.addEffect(new MobEffectInstance(
+                    MobEffects.FIRE_RESISTANCE,
+                    45 * 20,
+                    1
+            ));
+            player.addEffect(new MobEffectInstance(
+                    MobEffects.ABSORPTION,
+                    45 * 20,
+                    1
+            ));
+        }
     }
 
 }

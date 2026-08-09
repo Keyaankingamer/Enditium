@@ -16,5 +16,6 @@
   "item.enditium.ether_upgrade.addition_slot": "Add Enditium Ingot",
   "item.enditium.ether_upgrade.base_slot": "Add Netherite Armor",
   "item.enditium.ether_upgrade.ingredients": "Enditium Ingot",
-  "item.enditium.ether_upgrade.applies_to": "Netherite Armor"
+  "item.enditium.ether_upgrade.applies_to": "Netherite Armor",
+  "effect.enditium.enditium_resonance": "Enditium Resonance"
 }
