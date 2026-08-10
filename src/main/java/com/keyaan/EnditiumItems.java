@@ -59,7 +59,7 @@ public class EnditiumItems {
                     Item::new,
                     new Item.Properties()
                             .rarity(Rarity.EPIC)
-            );
+            );//nice guy
 
     public static final Item ENDITIUM_UPGRADE_TEMPLATE = registryHelper.registerItem(
             "enditium_upgrade_template",

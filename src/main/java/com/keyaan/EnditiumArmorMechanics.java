@@ -65,7 +65,7 @@ public class EnditiumArmorMechanics {
             );
             player.addEffect(new MobEffectInstance(
                     ArmorCooldown.ENDITIUM_RESONANCE,
-                    45 * 20,
+                    300 * 20,
                     0
             ));
             player.addEffect(new MobEffectInstance(
