@@ -30,7 +30,7 @@ public class BoiledEtherstoneResinRemove {
                     ItemStack EtherResinNugget = new ItemStack(EnditiumItems.ETHER_RESIN_NUGGET);
                     //Visuals and Audio
                     world.addDestroyBlockEffect(pos, EnditiumBlocks.BOILED_ETHERSTONE.defaultBlockState());
-                    world.playSound(player, pos, SoundEvents.HONEY_BLOCK_BREAK, SoundSource.BLOCKS, 1.0F, 1.0F);
+                    world.playSound(player, pos, SoundEvents.RESIN_BREAK, SoundSource.BLOCKS, 1.0F, 1.0F);
                     world.playSound(player, pos, SoundEvents.CALCITE_BREAK, SoundSource.BLOCKS, 1.0F, 1.0F);
                     player.swing(hand);
                     //Functionallity

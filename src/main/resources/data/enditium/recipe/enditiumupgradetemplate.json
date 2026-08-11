@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ABA",
+    "ACA",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      "enditium:ether_resin_nugget"
+    ],
+    "B": [
+      "enditium:enditium_upgrade_template"
+    ],
+    "C": [
+      "enditium:etherstone"
+    ]
+  },
+  "result": {
+    "id": "enditium:enditium_upgrade_template",
+    "count": 2
+  }
+}

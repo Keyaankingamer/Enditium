@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "enditium:ether_resin_block"
+    ]
+  ],
+  "result": {
+    "id": "enditium:ether_resin",
+    "count": 4
+  }
+}

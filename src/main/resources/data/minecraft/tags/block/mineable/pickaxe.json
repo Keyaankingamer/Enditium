@@ -4,6 +4,10 @@
     "enditium:etherstone",
     "enditium:boiled_etherstone",
     "enditium:boiled_resin_etherstone",
-    "enditium:detritus_clump"
+    "enditium:detritus_clump",
+    "enditium:polished_etherstone",
+    "enditium:etherstone_tiles",
+    "enditium:enditium_block",
+    "enditium:ether_resin_brick"
   ]
 }

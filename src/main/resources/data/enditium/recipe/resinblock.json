@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "enditium:ether_resin"
+    ],
+    [
+      "enditium:ether_resin"
+    ],
+    [
+      "enditium:ether_resin"
+    ],
+    [
+      "enditium:ether_resin"
+    ]
+  ],
+  "result": {
+    "id": "enditium:ether_resin_block"
+  }
+}

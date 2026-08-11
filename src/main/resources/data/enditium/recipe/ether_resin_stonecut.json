@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    "enditium:ether_resin_block"
+  ],
+  "result": {
+    "id": "enditium:ether_resin_brick",
+    "count": 4
+  }
+}

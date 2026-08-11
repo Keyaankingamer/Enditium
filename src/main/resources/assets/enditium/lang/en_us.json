@@ -17,5 +17,10 @@
   "item.enditium.ether_upgrade.base_slot": "Add Netherite Armor",
   "item.enditium.ether_upgrade.ingredients": "Enditium Ingot",
   "item.enditium.ether_upgrade.applies_to": "Netherite Armor",
-  "effect.enditium.enditium_resonance": "Enditium Resonance"
+  "effect.enditium.enditium_resonance": "Enditium Resonance",
+  "item.enditium.enditium_block": "Block of Enditium",
+  "item.enditium.ether_resin_block": "Block of Ether Resin",
+  "item.enditium.ether_resin_brick": "Ether Resin Bricks",
+  "item.enditium.polished_etherstone": "Polished Etherstone",
+  "item.enditium.etherstone_tiles": "Etherstone Tiles"
 }

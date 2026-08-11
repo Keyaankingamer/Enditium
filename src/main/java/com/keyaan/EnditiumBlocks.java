@@ -58,6 +58,55 @@ public class EnditiumBlocks {
                                     .rarity(Rarity.EPIC)
             );
 
+    public static final Block ENDITIUM_BLOCK =
+            registryHelper.registerBlock(
+                    "enditium_block",
+                    Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.NETHERITE_BLOCK)
+                            .destroyTime(20)
+                            .requiresCorrectToolForDrops()
+            );
+
+    public static final Block ETHER_RESIN_BLOCK =
+            registryHelper.registerBlock(
+                    "ether_resin_block",
+                    Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.RESIN)
+                            .destroyTime(0)
+            );
+
+    public static final Block ETHER_RESIN_BRICK =
+            registryHelper.registerBlock(
+                    "ether_resin_brick",
+                    Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.RESIN_BRICKS)
+                            .destroyTime(3)
+                            .requiresCorrectToolForDrops()
+            );
+
+    public static final Block POLISHED_ETHERSTONE =
+            registryHelper.registerBlock(
+                    "polished_etherstone",
+                    Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.POLISHED_TUFF)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+
+    public static final Block ETHERSTONE_TILES =
+            registryHelper.registerBlock(
+                    "etherstone_tiles",
+                    Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.TUFF_BRICKS)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+
     //Load the script you lazy ass fucking bum
     public static void init() {
 

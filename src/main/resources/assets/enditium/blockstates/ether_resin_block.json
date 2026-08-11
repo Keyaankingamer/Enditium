@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "enditium:block/ether_resin_block"
+    }
+  }
+}

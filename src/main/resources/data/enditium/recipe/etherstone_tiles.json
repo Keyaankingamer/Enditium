@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    [
+      "enditium:polished_etherstone"
+    ],
+    [
+      "enditium:polished_etherstone"
+    ],
+    [
+      "enditium:polished_etherstone"
+    ],
+    [
+      "enditium:polished_etherstone"
+    ]
+  ],
+  "result": {
+    "id": "enditium:etherstone_tiles",
+    "count": 4
+  }
+}

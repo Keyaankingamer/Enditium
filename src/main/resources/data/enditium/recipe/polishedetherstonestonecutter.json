@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": [
+    "enditium:polished_etherstone"
+  ],
+  "result": {
+    "id": "enditium:etherstone_tiles",
+    "count": 1
+  }
+}
