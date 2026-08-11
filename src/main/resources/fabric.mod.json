@@ -3,13 +3,12 @@
 	"id": "enditium",
 	"version": "${version}",
 	"name": "Enditium",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Enditium is a mod that adds a unique take on Enderite/End Netherite/End ore, with a bit more of an advanced crafting tree then Netherite, including combinding many new materials exclusively found in the end.",
 	"authors": [
-		"Me!"
+		"Keyaan"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "keyaan.carrd.co"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/enditium/icon.png",
