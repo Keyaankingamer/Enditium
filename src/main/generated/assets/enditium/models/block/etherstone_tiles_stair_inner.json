@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "enditium:block/etherstone_tiles",
+    "side": "enditium:block/etherstone_tiles",
+    "top": "enditium:block/etherstone_tiles"
+  }
+}

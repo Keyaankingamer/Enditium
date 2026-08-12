@@ -20,6 +20,7 @@ public class EnditiumDataGenerator implements DataGeneratorEntrypoint {
 		FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
 
 		pack.addProvider(DataGenMain::new);
+		pack.addProvider(StairSlabGen::new);
 	}
 	//Below this line is not my code
 	@Override

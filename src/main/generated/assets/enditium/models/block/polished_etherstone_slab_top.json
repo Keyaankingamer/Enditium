@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "enditium:block/polished_etherstone",
+    "side": "enditium:block/polished_etherstone",
+    "top": "enditium:block/polished_etherstone"
+  }
+}

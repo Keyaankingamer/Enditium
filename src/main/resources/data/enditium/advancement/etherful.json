@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "enditium:ether_resin"
+    },
+    "title": "Etherful",
+    "description": "Collect an Ether Resin Nugget",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "ether_resin": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enditium:ether_resin_nugget"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "enditium:resintonugget",
+      "enditium:resinnuggettoresin",
+      "enditium:resinblock",
+      "enditium:etherresinconvert",
+      "enditium:ether_resin_stonecut",
+      "enditium:etherstoneplate"
+    ]
+  }
+}

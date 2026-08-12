@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "enditium:block/polished_etherstone_slab"
+    },
+    "type=double": {
+      "model": "enditium:block/polished_etherstone"
+    },
+    "type=top": {
+      "model": "enditium:block/polished_etherstone_slab_top"
+    }
+  }
+}

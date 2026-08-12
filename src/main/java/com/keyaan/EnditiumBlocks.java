@@ -4,8 +4,7 @@ import com.bananaman.api.RegistryHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class EnditiumBlocks {
@@ -16,15 +15,6 @@ public class EnditiumBlocks {
                     Enditium.MOD_ID
             );
     //BLOCKS
-    public static final Block ETHERSTONE =
-            registryHelper.registerBlock(
-                    "etherstone",
-                    Block::new,
-                    BlockBehaviour.Properties.of()
-                            .sound(SoundType.NETHER_GOLD_ORE)
-                            .destroyTime(11)
-                            .requiresCorrectToolForDrops()
-            );
 
     public static final Block BOILED_ETHERSTONE =
             registryHelper.registerBlock(
@@ -76,7 +66,7 @@ public class EnditiumBlocks {
                             .sound(SoundType.RESIN)
                             .destroyTime(0)
             );
-
+    //Ether Resin Bricks
     public static final Block ETHER_RESIN_BRICK =
             registryHelper.registerBlock(
                     "ether_resin_brick",
@@ -86,7 +76,81 @@ public class EnditiumBlocks {
                             .destroyTime(3)
                             .requiresCorrectToolForDrops()
             );
+    public static final Block ETHER_RESIN_BRICK_SLAB =
+            registryHelper.registerBlock(
+                    "ether_resin_brick_slab",
+                    SlabBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.RESIN_BRICKS)
+                            .destroyTime(3)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block ETHER_RESIN_BRICK_STAIR =
+            registryHelper.registerBlock(
+                    "ether_resin_brick_stair",
+                    properties -> new StairBlock(
+                            ETHER_RESIN_BRICK.defaultBlockState(),
+                            properties
+                    ),
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.RESIN_BRICKS)
+                            .destroyTime(3)
+                            .requiresCorrectToolForDrops()
+            );
 
+    public static final Block ETHER_RESIN_BRICK_WALL =
+            registryHelper.registerBlock(
+                    "ether_resin_brick_wall",
+                    WallBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.RESIN_BRICKS)
+                            .destroyTime(3)
+                            .requiresCorrectToolForDrops()
+            );
+
+    //Etherstone
+    public static final Block ETHERSTONE =
+            registryHelper.registerBlock(
+                    "etherstone",
+                    Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.NETHER_GOLD_ORE)
+                            .destroyTime(11)
+                            .requiresCorrectToolForDrops()
+            );
+
+    public static final Block ETHERSTONE_SLAB =
+            registryHelper.registerBlock(
+                    "etherstone_slab",
+                    SlabBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.NETHER_GOLD_ORE)
+                            .destroyTime(11)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block ETHERSTONE_STAIR =
+            registryHelper.registerBlock(
+                    "etherstone_stair",
+                    properties -> new StairBlock(
+                            ETHERSTONE.defaultBlockState(),
+                            properties
+                    ),
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.NETHER_GOLD_ORE)
+                            .destroyTime(11)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block ETHERSTONE_WALL =
+            registryHelper.registerBlock(
+                    "etherstone_wall",
+                    WallBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.NETHER_GOLD_ORE)
+                            .destroyTime(11)
+                            .requiresCorrectToolForDrops()
+            );
+
+    //Polished Etherstone
     public static final Block POLISHED_ETHERSTONE =
             registryHelper.registerBlock(
                     "polished_etherstone",
@@ -96,11 +160,73 @@ public class EnditiumBlocks {
                             .destroyTime(5)
                             .requiresCorrectToolForDrops()
             );
+    public static final Block POLISHED_ETHERSTONE_SLAB =
+            registryHelper.registerBlock(
+                    "polished_etherstone_slab",
+                    SlabBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.POLISHED_TUFF)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block POLISHED_ETHERSTONE_STAIR =
+            registryHelper.registerBlock(
+                    "polished_etherstone_stair",
+                    properties -> new StairBlock(
+                            ETHERSTONE.defaultBlockState(),
+                            properties
+                    ),
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.POLISHED_TUFF)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block POLISHED_ETHERSTONE_WALL =
+            registryHelper.registerBlock(
+                    "polished_etherstone_wall",
+                    WallBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.POLISHED_TUFF)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
 
+    //Etherstone Tiles
     public static final Block ETHERSTONE_TILES =
             registryHelper.registerBlock(
                     "etherstone_tiles",
                     Block::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.TUFF_BRICKS)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+
+    public static final Block ETHERSTONE_TILES_SLAB =
+            registryHelper.registerBlock(
+                    "etherstone_tiles_slab",
+                    SlabBlock::new,
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.TUFF_BRICKS)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block ETHERSTONE_TILES_STAIR =
+            registryHelper.registerBlock(
+                    "etherstone_tiles_stair",
+                    properties -> new StairBlock(
+                            ETHERSTONE.defaultBlockState(),
+                            properties
+                    ),
+                    BlockBehaviour.Properties.of()
+                            .sound(SoundType.TUFF_BRICKS)
+                            .destroyTime(5)
+                            .requiresCorrectToolForDrops()
+            );
+    public static final Block ETHERSTONE_TILES_WALL =
+            registryHelper.registerBlock(
+                    "etherstone_tiles_wall",
+                    WallBlock::new,
                     BlockBehaviour.Properties.of()
                             .sound(SoundType.TUFF_BRICKS)
                             .destroyTime(5)
