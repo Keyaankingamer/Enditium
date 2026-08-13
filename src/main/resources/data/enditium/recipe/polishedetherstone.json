@@ -1,19 +1,14 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    [
-      "enditium:etherstone"
-    ],
-    [
-      "enditium:etherstone"
-    ],
-    [
-      "enditium:etherstone"
-    ],
-    [
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": [
       "enditium:etherstone"
     ]
-  ],
+  },
   "result": {
     "id": "enditium:polished_etherstone",
     "count": 4

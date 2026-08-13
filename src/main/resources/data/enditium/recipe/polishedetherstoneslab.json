@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "AA",
-    "AA"
+    "C",
+    "C",
+    "AAA"
   ],
   "key": {
     "A": [
@@ -10,7 +11,7 @@
     ]
   },
   "result": {
-    "id": "enditium:etherstone_tiles",
-    "count": 4
+    "id": "enditium:polished_etherstone_slab",
+    "count": 6
   }
 }

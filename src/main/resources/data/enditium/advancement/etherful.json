@@ -33,7 +33,8 @@
       "enditium:resinblock",
       "enditium:etherresinconvert",
       "enditium:ether_resin_stonecut",
-      "enditium:etherstoneplate"
+      "enditium:etherstoneplate",
+      "enditium:resinbrick"
     ]
   }
 }

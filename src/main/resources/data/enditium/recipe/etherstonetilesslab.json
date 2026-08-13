@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "C",
+    "C",
+    "AAA"
+  ],
+  "key": {
+    "A": [
+      "enditium:etherstone_tiles"
+    ]
+  },
+  "result": {
+    "id": "enditium:etherstone_tiles_slab",
+    "count": 6
+  }
+}

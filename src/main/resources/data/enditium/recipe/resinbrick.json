@@ -1,16 +1,19 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "AA",
-    "AA"
+    "AB",
+    "BA"
   ],
   "key": {
     "A": [
       "enditium:ether_resin"
+    ],
+    "B": [
+      "enditium:ether_resin_nugget"
     ]
   },
   "result": {
-    "id": "enditium:ether_resin_block",
+    "id": "enditium:ether_resin_brick",
     "count": 1
   }
 }

@@ -6,9 +6,6 @@ import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
-import net.minecraft.client.data.models.model.ModelTemplate;
-import net.minecraft.client.data.models.model.ModelTemplates;
-import net.minecraft.client.renderer.item.ItemModel;
 
 public class StairSlabGen extends FabricModelProvider {
 
@@ -30,17 +27,16 @@ public class StairSlabGen extends FabricModelProvider {
                     .slab(EnditiumBlocks.POLISHED_ETHERSTONE_SLAB)
                     .wall(EnditiumBlocks.POLISHED_ETHERSTONE_WALL);
             //Etherstone
-                    generator.family(EnditiumBlocks.ETHERSTONE)
+            generator.family(EnditiumBlocks.ETHERSTONE)
                     .stairs(EnditiumBlocks.ETHERSTONE_STAIR)
-                            .slab(EnditiumBlocks.ETHERSTONE_SLAB)
-                            .wall(EnditiumBlocks.ETHERSTONE_WALL);
-        //Ether Resin Brick
-        generator.family(EnditiumBlocks.ETHER_RESIN_BRICK)
-                .stairs(EnditiumBlocks.ETHER_RESIN_BRICK_SLAB)
-                .slab(EnditiumBlocks.ETHER_RESIN_BRICK_STAIR)
-                .wall(EnditiumBlocks.ETHER_RESIN_BRICK_WALL);
-        }
-
+                    .slab(EnditiumBlocks.ETHERSTONE_SLAB)
+                    .wall(EnditiumBlocks.ETHERSTONE_WALL);
+            //Ether Resin Brick
+            generator.family(EnditiumBlocks.ETHER_RESIN_BRICK)
+                    .stairs(EnditiumBlocks.ETHER_RESIN_BRICK_STAIR)
+                    .slab(EnditiumBlocks.ETHER_RESIN_BRICK_SLAB)
+                    .wall(EnditiumBlocks.ETHER_RESIN_BRICK_WALL);
+            }
     @Override
     public void generateItemModels(ItemModelGenerators generator) {
     }

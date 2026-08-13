@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "enditium:block/ether_resin_brick",
+    "side": "enditium:block/ether_resin_brick",
+    "top": "enditium:block/ether_resin_brick"
+  }
+}

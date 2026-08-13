@@ -2,12 +2,24 @@
   "replace": false,
   "values": [
     "enditium:etherstone",
+    "enditium:etherstone_slab",
+    "enditium:etherstone_stair",
+    "enditium:etherstone_wall",
     "enditium:boiled_etherstone",
     "enditium:boiled_resin_etherstone",
     "enditium:detritus_clump",
     "enditium:polished_etherstone",
-    "enditium:etherstone_tiles",
+    "enditium:polished_etherstone_slab",
+    "enditium:polished_etherstone_stair",
+    "enditium:polished_etherstone_wall",
     "enditium:enditium_block",
-    "enditium:ether_resin_brick"
+    "enditium:ether_resin_brick",
+    "enditium:ether_resin_brick_slab",
+    "enditium:ether_resin_brick_stair",
+    "enditium:ether_resin_wall",
+    "enditium:etherstone_tiles",
+    "enditium:etherstone_tiles_slab",
+    "enditium:etherstone_tiles_stair",
+    "enditium:etherstone_tiles_wall"
   ]
 }
