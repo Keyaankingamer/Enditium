@@ -24,7 +24,7 @@ import static com.keyaan.Enditium.MOD_ID;
 public class EnditiumArmor {
 
     //Initialize Registry Helper
-    private static final RegistryHelper<Item> registryHelper =
+    public static final RegistryHelper<Item> registryHelper =
             new RegistryHelper<>(
                     BuiltInRegistries.ITEM,
                     MOD_ID
@@ -98,6 +98,8 @@ public class EnditiumArmor {
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
                 );
+
+
         public static void Init() {
 
         }

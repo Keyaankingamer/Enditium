@@ -2,14 +2,16 @@ package com.keyaan;
 
 import com.bananaman.api.RegistryHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public class EnditiumBlocks {
     //Initialize Registry Helper
-    private static final RegistryHelper<Block> registryHelper =
+    public static final RegistryHelper<Block> registryHelper =
             new RegistryHelper<Block>(
                     BuiltInRegistries.BLOCK,
                     Enditium.MOD_ID
@@ -232,6 +234,8 @@ public class EnditiumBlocks {
                             .destroyTime(5)
                             .requiresCorrectToolForDrops()
             );
+
+
 
     //Load the script you lazy ass fucking bum
     public static void init() {

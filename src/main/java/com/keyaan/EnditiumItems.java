@@ -6,10 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.SmithingTemplateItem;
+import net.minecraft.world.item.*;
 
 import java.util.List;
 
@@ -17,7 +14,7 @@ import java.util.List;
 public class EnditiumItems {
 
     //Initialize Registry Helper
-    private static final RegistryHelper<Item> registryHelper =
+    public static final RegistryHelper<Item> registryHelper =
             new RegistryHelper<>(
                     BuiltInRegistries.ITEM,
                     Enditium.MOD_ID
@@ -87,6 +84,17 @@ public class EnditiumItems {
             new Item.Properties().rarity(Rarity.EPIC)
     );
 
+    //Creative Tab
+    public static final CreativeModeTab ENDITIUM_TAB =
+            registryHelper.registerCreativeTab(
+                    "enditium",
+                    () -> new ItemStack(ENDITIUM),
+                    builder -> builder.displayItems((parameters, output) -> {
+                        registryHelper.getRegisteredItems().forEach(output::accept);
+                        EnditiumBlocks.registryHelper.getRegisteredBlocks().forEach(output::accept);
+                        EnditiumArmor.registryHelper.getRegisteredItems().forEach(output::accept);
+                    })
+            );
     public static void init() {
 
     }

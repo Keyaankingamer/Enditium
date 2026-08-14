@@ -34,5 +34,6 @@
   "item.enditium.polished_etherstone_wall": "Polished Etherstone Wall",
   "item.enditium.etherstone_slab": "Etherstone Slab",
   "item.enditium.etherstone_stair": "Etherstone Stair",
-  "item.enditium.etherstone_wall": "Etherstone Wall"
+  "item.enditium.etherstone_wall": "Etherstone Wall",
+  "itemGroup.enditium.enditium": "Enditium"
 }
