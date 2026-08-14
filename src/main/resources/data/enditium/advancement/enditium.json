@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "id": "enditium:enditium"
+    },
+    "title": "Alloy of life",
+    "description": "Create an Enditium Ingot",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "enditium:detritus",
+  "criteria": {
+    "has_enditium": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enditium:enditium"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "recipes": [
+    "enditium:enditiumhelmet",
+    "enditium:enditiumchestplate",
+    "enditium:enditiumhelmet",
+    "enditium:enditiumboots"
+  ]
+}

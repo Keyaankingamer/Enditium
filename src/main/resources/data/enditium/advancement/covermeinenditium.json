@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "id": "enditium:enditium_chestplate"
+    },
+    "title": "(Semi) Immortalized",
+    "description": "Obtain a full set of Enditium armor",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "enditium:enditium",
+  "criteria": {
+    "has_full_enditium_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enditium:enditium_helmet"
+            ]
+          },
+          {
+            "items": [
+              "enditium:enditium_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "enditium:enditium_leggings"
+            ]
+          },
+          {
+            "items": [
+              "enditium:enditium_boots"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}

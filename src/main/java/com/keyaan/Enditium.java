@@ -43,6 +43,7 @@ public class Enditium implements ModInitializer {
 		UpgradeTemplateLootttable.Init();
 		EnditiumArmorMechanics.init();
 		ArmorCooldown.init();
+		EnditiumSounds.init();
 		BiomeModifications.addFeature(
 				BiomeSelectors.foundInTheEnd(),
 				GenerationStep.Decoration.UNDERGROUND_ORES,

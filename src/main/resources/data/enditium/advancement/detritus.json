@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "enditium:detritus_clump"
+    },
+    "title": "Hidden in the Isles",
+    "description": "Find a Detritus Clump in the End Islands",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "enditium:etherful",
+  "criteria": {
+    "has_detritus_clump": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "enditium:detritus_clump"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10
+  },
+  "recipes": [
+    "enditium:detriusblast",
+    "enditium:detritusclumpsmelt",
+    "enditium:enditium"
+  ]
+}
