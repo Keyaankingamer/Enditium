@@ -14,6 +14,8 @@
   },
   "rewards": {
     "recipes": [
+      "enditium:boiledetherstoneblast",
+      "enditium:boiledetherstonesmelt",
       "enditium:etherstoneplate",
       "enditium:etherstoneslab",
       "enditium:etherstonestair",

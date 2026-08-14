@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "enditium:ether_resin_brick_wall",
+    "enditium:etherstone_wall",
+    "enditium:polished_etherstone_wall",
+    "enditium:etherstone_tiles_wall"
+  ]
+}
