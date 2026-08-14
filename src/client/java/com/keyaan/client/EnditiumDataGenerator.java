@@ -21,6 +21,7 @@ public class EnditiumDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(DataGenMain::new);
 		pack.addProvider(StairSlabGen::new);
+		pack.addProvider(LoottableGen::new);
 	}
 	//Below this line is not my code
 	@Override

@@ -1,10 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "C",
-    "C",
-    "AAA"
-  ],
+  "pattern": ["AAA"],
   "key": {
     "A": [
       "enditium:polished_etherstone"

@@ -2,12 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "pattern": ["AAA", "AAA"],
   "key": {
-    "A": [
-      "enditium:polished_etherstone"
-    ]
+    "A": ["enditium:ether_resin_brick"]
   },
   "result": {
-    "id": "enditium:polished_etherstone_wall",
+    "id": "enditium:ether_resin_brick_wall",
     "count": 6
   }
 }

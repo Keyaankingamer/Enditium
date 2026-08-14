@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:end/enter_end_gateway",
+  "criteria": {
+    "has_etherstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["enditium:etherstone"]
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "enditium:etherstoneplate",
+      "enditium:etherstoneslab",
+      "enditium:etherstonestair",
+      "enditium:etherstonewall",
+      "enditium:etherstone_stonecutter",
+      "enditium:etherstone_tiles",
+      "enditium:etherstonetilesslab",
+      "enditium:etherstonetilestair",
+      "enditium:etherstonetilesstonecutter",
+      "enditium:etherstone_tiles_wall",
+      "enditium:etherstone_wall",
+      "enditium:polishedetherstone",
+      "enditium:polishedetherstoneslab",
+      "enditium:polishedetherstonestair",
+      "enditium:polishedetherstonestonecutter"
+    ]
+  }
+}
