@@ -1,5 +1,5 @@
 plugins {
-	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+	id 'fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -23,11 +23,9 @@ repositories {
 		}
 	}
 
-	fabricApi {
-		configureDataGeneration {
-			client = true
-		}
-	}
+fabricApi {
+	configureDataGeneration()
+}
 
 	dependencies {
 		// To change the versions see the gradle.properties file
@@ -39,7 +37,7 @@ repositories {
 		modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 		//MY dependencies
-		modImplementation "com.github.bananaman7582-cmd:Registry-Helper-Library:${project.registrylib_version}"
+		implementation 'com.github.bananaman7582-cmd:Registry-Helper-Library:1.1-1.21.1'
 		modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 	}
 
