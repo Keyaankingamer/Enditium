@@ -31,7 +31,7 @@ public class SpikePlacedFeature {
                 new PlacedFeature(
                         spike,
                         List.of(
-                                RarityFilter.onAverageOnceEvery(750),
+                                RarityFilter.onAverageOnceEvery(EnditiumConfig.EtherstoneSpikeSpawn),
                                 CountPlacement.of(3),
                                 InSquarePlacement.spread(),
                                 HeightmapPlacement.onHeightmap(Heightmap.Types.WORLD_SURFACE)

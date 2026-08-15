@@ -6,6 +6,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 
 public class EnditiumSounds {
+    //Thank you fabric docs for this useful code
     public static final SoundEvent ENDITIUMARMORUSE = registerSound("resonance_activate");
 
     // actual registration of all the custom SoundEvents

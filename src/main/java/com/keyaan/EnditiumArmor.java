@@ -58,7 +58,7 @@ public class EnditiumArmor {
                         10,
                         SoundEvents.ARMOR_EQUIP_NETHERITE,
                         3.0F,
-                        2F,
+                        0.2F,
                         EnditiumTags.Tags.ENDITIUM_ARMOR_REPAIR,
                         ENDITIUM_ARMOR_ASSET
                 );

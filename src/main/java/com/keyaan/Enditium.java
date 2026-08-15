@@ -34,6 +34,7 @@ public class Enditium implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Enditium has been initialized :D");
+		EnditiumConfigClassThingy.HANDLER.load();
 		EnditiumItems.init();
 		EnditiumBlocks.init();
 		EnditiumArmor.ArmorInit.Init();
