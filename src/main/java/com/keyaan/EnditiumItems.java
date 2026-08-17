@@ -4,7 +4,7 @@ package com.keyaan;
 import com.bananaman.api.RegistryHelper;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.*;
 
@@ -70,13 +70,13 @@ public class EnditiumItems {
                         Component.translatable("item.enditium.ether_upgrade.base_slot"),
                         Component.translatable("item.enditium.ether_upgrade.addition_slot"),
                         List.of(
-                                Identifier.fromNamespaceAndPath("minecraft", "container/slot/helmet"),
-                                Identifier.fromNamespaceAndPath("minecraft", "container/slot/chestplate"),
-                                Identifier.fromNamespaceAndPath("minecraft", "container/slot/leggings"),
-                                Identifier.fromNamespaceAndPath("minecraft", "container/slot/boots")
+                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/helmet"),
+                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/chestplate"),
+                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/leggings"),
+                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/boots")
                                 ),
                         List.of(
-                                Identifier.fromNamespaceAndPath("minecraft", "container/slot/ingot")
+                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/ingot")
                         ),
                         properties
                 );

@@ -3,7 +3,7 @@ package com.keyaan;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Position;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.Level;
@@ -40,7 +40,7 @@ public class SpikesSpawn {
         //Make sure the spike exists
         var SpikeCheck = structureManager.get(
                 //Randomize the spike to spawn in the process
-                Identifier.fromNamespaceAndPath(Enditium.MOD_ID, spikeToSpawn)
+                ResourceLocation.fromNamespaceAndPath(Enditium.MOD_ID, spikeToSpawn)
         );
         if (!SpikeCheck.isEmpty()) {
             //LOGGER.warn("Loaded Spike structure file");

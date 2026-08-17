@@ -8,7 +8,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.equipment.*;
 import net.minecraft.core.Holder;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.Util;
@@ -39,7 +39,7 @@ public class EnditiumArmor {
         public static final ResourceKey<EquipmentAsset> ENDITIUM_ARMOR_ASSET =
                 ResourceKey.create(
                         EquipmentAssets.ROOT_ID,
-                        Identifier.fromNamespaceAndPath(
+                        ResourceLocation.fromNamespaceAndPath(
                                 MOD_ID,
                                 "enditium"
                         )
@@ -67,7 +67,7 @@ public class EnditiumArmor {
                     registryHelper.registerArmor(
                             "enditium_helmet",
                             ENDITIUM_ARMOR,
-                            ArmorType.HELMET,
+                            ArmorItem.Type.HELMET,
                             new Item.Properties()
                                     .rarity(Rarity.EPIC)
                         );
@@ -76,7 +76,7 @@ public class EnditiumArmor {
                 registryHelper.registerArmor(
                         "enditium_chestplate",
                         ENDITIUM_ARMOR,
-                        ArmorType.CHESTPLATE,
+                        ArmorItem.Type.BODY,
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
                 );

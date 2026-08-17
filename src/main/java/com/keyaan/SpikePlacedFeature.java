@@ -6,7 +6,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
@@ -16,7 +16,7 @@ import net.minecraft.world.level.levelgen.placement.*;
 import java.util.List;
 
 public class SpikePlacedFeature {
-    public static final ResourceKey<PlacedFeature> SPIKE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, Identifier.fromNamespaceAndPath(Enditium.MOD_ID, "etherstone_spike"));
+    public static final ResourceKey<PlacedFeature> SPIKE_PLACED_KEY = ResourceKey.create(Registries.PLACED_FEATURE, ResourceLocation.fromNamespaceAndPath(Enditium.MOD_ID, "etherstone_spike"));
 
     public static void Configure(BootstrapContext<PlacedFeature> context) {
         //Not my code, but apparently is how im supposed to do it so

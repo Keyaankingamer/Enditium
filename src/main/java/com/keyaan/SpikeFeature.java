@@ -6,7 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.WorldGenLevel;
@@ -26,7 +26,7 @@ public class SpikeFeature extends Feature<NoneFeatureConfiguration> {
 
         Registry.register(
                 BuiltInRegistries.FEATURE,
-                Identifier.fromNamespaceAndPath(Enditium.MOD_ID, "etherstone_spike"),
+                ResourceLocation.fromNamespaceAndPath(Enditium.MOD_ID, "etherstone_spike"),
                 SPIKE_FEATURE
         );
     }
