@@ -1,13 +1,15 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["AAA"],
-  "key": {
-    "A": [
-      "enditium:ether_resin_brick"
-    ]
-  },
-  "result": {
-    "id": "enditium:ether_resin_brick_slab",
-    "count": 6
-  }
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "AAA"
+                ],
+    "key":  {
+                "A":  {
+                          "item":  "enditium:ether_resin_brick"
+                      }
+            },
+    "result":  {
+                   "id":  "enditium:ether_resin_brick_slab",
+                   "count":  6
+               }
 }

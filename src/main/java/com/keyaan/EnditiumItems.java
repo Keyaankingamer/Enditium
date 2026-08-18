@@ -2,6 +2,7 @@ package com.keyaan;
 
 
 import com.bananaman.api.RegistryHelper;
+import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -56,33 +57,39 @@ public class EnditiumItems {
                     Item::new,
                     new Item.Properties()
                             .rarity(Rarity.EPIC)
-            );//nice guy
+            );
 
-    public static final Item ENDITIUM_UPGRADE_TEMPLATE = registryHelper.registerItem(
-            "enditium_upgrade_template",
-            properties -> {
-                
-                return new SmithingTemplateItem(
-                        Component.translatable("item.enditium.ether_upgrade.applies_to")
-                                .withStyle(style -> style.withColor(0x55FFFF)),
-                        Component.translatable("item.enditium.ether_upgrade.ingredients")
-                                .withStyle(style -> style.withColor(0x55FFFF)),
-                        Component.translatable("item.enditium.ether_upgrade.base_slot"),
-                        Component.translatable("item.enditium.ether_upgrade.addition_slot"),
-                        List.of(
-                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/helmet"),
-                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/chestplate"),
-                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/leggings"),
-                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/boots")
-                                ),
-                        List.of(
-                                ResourceLocation.fromNamespaceAndPath("minecraft", "container/slot/ingot")
-                        ),
-                        properties
-                );
-            },
-            new Item.Properties().rarity(Rarity.EPIC)
-    );
+    public static final Item ENDITIUM_UPGRADE_TEMPLATE = Registry.register(
+            BuiltInRegistries.ITEM,
+            ResourceLocation.fromNamespaceAndPath(
+                    Enditium.MOD_ID,
+                    "enditium_upgrade_template"
+            ),
+            new SmithingTemplateItem(
+                    Component.translatable("item.enditium.ether_upgrade.applies_to")
+                            .withStyle(style -> style.withColor(0x55FFFF)),
+                    Component.translatable("item.enditium.ether_upgrade.ingredients")
+                            .withStyle(style -> style.withColor(0x55FFFF)),
+                    Component.translatable("item.enditium.ether_upgrade.name")
+                            .withStyle(style -> style.withColor(0x55FFFF)),
+                    Component.translatable("item.enditium.ether_upgrade.base_slot"),
+                    Component.translatable("item.enditium.ether_upgrade.addition_slot"),
+                    List.of(
+                            ResourceLocation.fromNamespaceAndPath(
+                                    "minecraft", "container/slot/helmet"),
+                            ResourceLocation.fromNamespaceAndPath(
+                                    "minecraft", "container/slot/chestplate"),
+                            ResourceLocation.fromNamespaceAndPath(
+                                    "minecraft", "container/slot/leggings"),
+                            ResourceLocation.fromNamespaceAndPath(
+                                    "minecraft", "container/slot/boots")
+                    ),
+                    List.of(
+                            ResourceLocation.fromNamespaceAndPath(
+                                    "minecraft", "container/slot/ingot")
+                    )
+            )
+    );;
 
     //Creative Tab
     public static final CreativeModeTab ENDITIUM_TAB =

@@ -1,12 +1,16 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "misc",
-  "ingredients": [
-    ["enditium:etherstone_plate"],
-    ["enditium:etherstone_plate"]
-  ],
-  "result": {
-    "id": "enditium:etherstone",
-    "count": 1
-  }
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "misc",
+    "ingredients":  [
+                        {
+                            "item":  "enditium:etherstone_plate"
+                        },
+                        {
+                            "item":  "enditium:etherstone_plate"
+                        }
+                    ],
+    "result":  {
+                   "id":  "enditium:etherstone",
+                   "count":  1
+               }
 }

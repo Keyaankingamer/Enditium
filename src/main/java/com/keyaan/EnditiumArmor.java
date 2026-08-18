@@ -13,6 +13,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
+import org.intellij.lang.annotations.Identifier;
 
 import java.util.EnumMap;
 import java.util.List;
@@ -38,7 +39,11 @@ public class EnditiumArmor {
 
 
 
-        public static final ArmorMaterial ENDITIUM_ARMOR = new ArmorMaterial(
+        public static final Holder<ArmorMaterial> ENDITIUM_ARMOR =
+                Registry.registerForHolder(
+                        BuiltInRegistries.ARMOR_MATERIAL,
+                        ResourceLocation.fromNamespaceAndPath(MOD_ID, "enditim"),
+                new ArmorMaterial(
                 Map.of(
                         ArmorItem.Type.BOOTS, 4,
                         ArmorItem.Type.LEGGINGS, 7,
@@ -47,13 +52,13 @@ public class EnditiumArmor {
                 ),
                 10, // Enchantment thingy
                 SoundEvents.ARMOR_EQUIP_NETHERITE,
-                () -> Ingredient.of(EnditiumTags.Tags.ENDITIUM_ARMOR_REPAIR), // Repair ingredient
+                () -> Ingredient.of(EnditiumTags.Tags.ENDITIUM_ARMOR_REPAIR), // Repair item
                 List.of(
                         new ArmorMaterial.Layer(ResourceLocation.fromNamespaceAndPath(MOD_ID, "enditium"))
                 ),
                 3.0F, // Armor Toughness
                 0.2F  // Knockback Resistance
-        );
+        ));
 
         public static final Item ENDITIUM_HELMET =
                     registryHelper.registerArmor(
@@ -62,15 +67,17 @@ public class EnditiumArmor {
                             ArmorItem.Type.HELMET,
                             new Item.Properties()
                                     .rarity(Rarity.EPIC)
+                                    .stacksTo(1)
                         );
 
         public static final Item ENDITIUM_CHESTPLATE =
                 registryHelper.registerArmor(
                         "enditium_chestplate",
                         ENDITIUM_ARMOR,
-                        ArmorItem.Type.BODY,
+                        ArmorItem.Type.CHESTPLATE,
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
+                                .stacksTo(1)
                 );
 
         public static final Item ENDITIUM_LEGGINGS =
@@ -80,6 +87,7 @@ public class EnditiumArmor {
                         ArmorItem.Type.LEGGINGS,
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
+                                .stacksTo(1)
                 );
 
         public static final Item ENDITIUM_BOOTS =
@@ -89,6 +97,7 @@ public class EnditiumArmor {
                         ArmorItem.Type.BOOTS,
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
+                                .stacksTo(1)
                 );
 
 

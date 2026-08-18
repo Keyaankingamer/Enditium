@@ -1,36 +1,36 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "ingredients": [
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ],
-    [
-      "enditium:ether_resin_nugget"
-    ]
-  ],
-  "result": {
-    "id": "enditium:ether_resin"
-  }
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "equipment",
+    "ingredients":  [
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        },
+                        {
+                            "item":  "enditium:ether_resin_nugget"
+                        }
+                    ],
+    "result":  {
+                   "id":  "enditium:ether_resin"
+               }
 }

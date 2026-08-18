@@ -74,7 +74,7 @@ public class EnditiumArmorMechanics {
                     1
             ));
             player.addEffect(new MobEffectInstance(
-                    MobEffects.RESISTANCE,
+                    MobEffects.DAMAGE_RESISTANCE,
                     30 * 20,
                     1
             ));

@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "AA",
-    "AA"
-  ],
-  "key": {
-    "A": [
-      "enditium:ether_resin"
-    ]
-  },
-  "result": {
-    "id": "enditium:ether_resin_block",
-    "count": 1
-  }
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "AA",
+                    "AA"
+                ],
+    "key":  {
+                "A":  {
+                          "item":  "enditium:ether_resin"
+                      }
+            },
+    "result":  {
+                   "id":  "enditium:ether_resin_block",
+                   "count":  1
+               }
 }

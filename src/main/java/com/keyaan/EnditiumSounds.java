@@ -11,9 +11,10 @@ public class EnditiumSounds {
 
     // actual registration of all the custom SoundEvents
     private static SoundEvent registerSound(String id) {
-        ResourceLocation ResourceLocation = ResourceLocation.fromNamespaceAndPath(Enditium.MOD_ID, id);
-        return Registry.register(BuiltInRegistries.SOUND_EVENT, ResourceLocation, SoundEvent.createVariableRangeEvent(ResourceLocation));
+        ResourceLocation identifier = ResourceLocation.fromNamespaceAndPath(Enditium.MOD_ID, id);
+        return Registry.register(BuiltInRegistries.SOUND_EVENT, identifier, SoundEvent.createVariableRangeEvent(identifier));
     }
+
 
     public static void init() {}
 }

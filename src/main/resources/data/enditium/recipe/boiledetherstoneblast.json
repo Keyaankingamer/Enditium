@@ -1,11 +1,11 @@
 {
-  "type": "minecraft:blasting",
-  "ingredient": [
-    "enditium:boiled_etherstone"
-  ],
-  "result": {
-    "id": "enditium:etherstone"
-  },
-  "experience": 0,
-  "cookingtime": 20
+    "type":  "minecraft:blasting",
+    "result":  {
+                   "id":  "enditium:etherstone"
+               },
+    "experience":  0,
+    "cookingtime":  20,
+    "ingredient":  {
+                       "item":  "enditium:boiled_etherstone"
+                   }
 }

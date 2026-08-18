@@ -1,17 +1,17 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "A  ",
-    "AA ",
-    "AAA"
-  ],
-  "key": {
-    "A": [
-      "enditium:polished_etherstone"
-    ]
-  },
-  "result": {
-    "id": "enditium:polished_etherstone_stair",
-    "count": 4
-  }
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "A  ",
+                    "AA ",
+                    "AAA"
+                ],
+    "key":  {
+                "A":  {
+                          "item":  "enditium:polished_etherstone"
+                      }
+            },
+    "result":  {
+                   "id":  "enditium:polished_etherstone_stair",
+                   "count":  4
+               }
 }

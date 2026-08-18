@@ -1,11 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": ["AAA", "AAA"],
-  "key": {
-    "A": ["enditium:etherstone"]
-  },
-  "result": {
-    "id": "enditium:etherstone_wall",
-    "count": 6
-  }
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "AAA",
+                    "AAA"
+                ],
+    "key":  {
+                "A":  {
+                          "item":  "enditium:etherstone"
+                      }
+            },
+    "result":  {
+                   "id":  "enditium:etherstone_wall",
+                   "count":  6
+               }
 }

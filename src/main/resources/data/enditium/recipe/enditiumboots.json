@@ -1,9 +1,15 @@
 {
-  "type": "minecraft:smithing_transform",
-  "base": "minecraft:netherite_boots",
-  "addition": "enditium:enditium",
-  "template": "enditium:enditium_upgrade_template",
-  "result": {
-    "id": "enditium:enditium_boots"
-  }
+    "type":  "minecraft:smithing_transform",
+    "result":  {
+                   "id":  "enditium:enditium_boots"
+               },
+    "base":  {
+                 "item":  "minecraft:netherite_boots"
+             },
+    "addition":  {
+                     "item":  "enditium:enditium"
+                 },
+    "template":  {
+                     "item":  "enditium:enditium_upgrade_template"
+                 }
 }

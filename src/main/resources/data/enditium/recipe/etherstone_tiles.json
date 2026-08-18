@@ -1,16 +1,16 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "AA",
-    "AA"
-  ],
-  "key": {
-    "A": [
-      "enditium:polished_etherstone"
-    ]
-  },
-  "result": {
-    "id": "enditium:etherstone_tiles",
-    "count": 4
-  }
+    "type":  "minecraft:crafting_shaped",
+    "pattern":  [
+                    "AA",
+                    "AA"
+                ],
+    "key":  {
+                "A":  {
+                          "item":  "enditium:polished_etherstone"
+                      }
+            },
+    "result":  {
+                   "id":  "enditium:etherstone_tiles",
+                   "count":  4
+               }
 }

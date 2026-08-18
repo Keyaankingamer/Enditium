@@ -1,13 +1,13 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "category": "equipment",
-  "ingredients": [
-    [
-      "enditium:ether_resin"
-    ]
-  ],
-  "result": {
-    "id": "enditium:ether_resin_nugget",
-    "count": 9
-  }
+    "type":  "minecraft:crafting_shapeless",
+    "category":  "equipment",
+    "ingredients":  [
+                        {
+                            "item":  "enditium:ether_resin"
+                        }
+                    ],
+    "result":  {
+                   "id":  "enditium:ether_resin_nugget",
+                   "count":  9
+               }
 }

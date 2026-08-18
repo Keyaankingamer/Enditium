@@ -1,12 +1,12 @@
 {
-  "type": "minecraft:smelting",
-  "category": "misc",
-  "ingredient": [
-    "enditium:boiled_etherstone"
-  ],
-  "result": {
-    "id": "enditium:etherstone"
-  },
-  "experience": 0,
-  "cookingtime": 50
+    "type":  "minecraft:smelting",
+    "category":  "misc",
+    "result":  {
+                   "id":  "enditium:etherstone"
+               },
+    "experience":  0,
+    "cookingtime":  50,
+    "ingredient":  {
+                       "item":  "enditium:boiled_etherstone"
+                   }
 }
