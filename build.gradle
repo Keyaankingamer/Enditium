@@ -37,7 +37,7 @@ fabricApi {
 		modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 		//MY dependencies
-		implementation 'com.github.bananaman7582-cmd:Registry-Helper-Library:1.21.1-SNAPSHOT'
+		modImplementation 'com.github.bananaman7582-cmd:Registry-Helper-Library:1.21.1-SNAPSHOT'
 		modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 	}
 

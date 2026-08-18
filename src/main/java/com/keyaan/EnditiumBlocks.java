@@ -66,7 +66,7 @@ public class EnditiumBlocks {
                     "ether_resin_block",
                     Block::new,
                     BlockBehaviour.Properties.of()
-                            .sound(SoundType.RESIN)
+                            .sound(SoundType.HONEY_BLOCK)
                             .destroyTime(0)
             );
     //Ether Resin Bricks
@@ -75,7 +75,7 @@ public class EnditiumBlocks {
                     "ether_resin_brick",
                     Block::new,
                     BlockBehaviour.Properties.of()
-                            .sound(SoundType.RESIN_BRICKS)
+                            .sound(SoundType.HONEY_BLOCK)
                             .destroyTime(3)
                             .requiresCorrectToolForDrops()
             );
@@ -84,7 +84,7 @@ public class EnditiumBlocks {
                     "ether_resin_brick_slab",
                     SlabBlock::new,
                     BlockBehaviour.Properties.of()
-                            .sound(SoundType.RESIN_BRICKS)
+                            .sound(SoundType.HONEY_BLOCK)
                             .destroyTime(3)
                             .requiresCorrectToolForDrops()
             );
@@ -96,7 +96,7 @@ public class EnditiumBlocks {
                             properties
                     ),
                     BlockBehaviour.Properties.of()
-                            .sound(SoundType.RESIN_BRICKS)
+                            .sound(SoundType.HONEY_BLOCK)
                             .destroyTime(3)
                             .requiresCorrectToolForDrops()
             );
@@ -106,7 +106,7 @@ public class EnditiumBlocks {
                     "ether_resin_brick_wall",
                     WallBlock::new,
                     BlockBehaviour.Properties.of()
-                            .sound(SoundType.RESIN_BRICKS)
+                            .sound(SoundType.HONEY_BLOCK)
                             .destroyTime(3)
                             .requiresCorrectToolForDrops()
             );
