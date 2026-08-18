@@ -85,7 +85,7 @@ public class EnditiumArmor {
                 registryHelper.registerArmor(
                         "enditium_leggings",
                         ENDITIUM_ARMOR,
-                        ArmorType.LEGGINGS,
+                        ArmorItem.Type.LEGGINGS,
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
                 );
@@ -94,7 +94,7 @@ public class EnditiumArmor {
                 registryHelper.registerArmor(
                         "enditium_boots",
                         ENDITIUM_ARMOR,
-                        ArmorType.BOOTS,
+                        ArmorItem.Type.BOOTS,
                         new Item.Properties()
                                 .rarity(Rarity.EPIC)
                 );
