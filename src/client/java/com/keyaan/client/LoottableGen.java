@@ -1,16 +1,16 @@
 package com.keyaan.client;
 
 import com.keyaan.EnditiumBlocks;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
 
 import java.util.concurrent.CompletableFuture;
 
-public class LoottableGen extends FabricBlockLootTableProvider {
+public class LoottableGen extends FabricBlockLootSubProvider {
 
     protected LoottableGen(
-            FabricDataOutput dataOutput,
+            FabricPackOutput dataOutput,
             CompletableFuture<HolderLookup.Provider> registryLookup
     ) {
         super(dataOutput, registryLookup);

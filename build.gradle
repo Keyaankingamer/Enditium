@@ -1,5 +1,5 @@
 plugins {
-	id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+	id 'net.fabricmc.fabric-loom' version "${loom_version}"
 	id 'maven-publish'
 }
 
@@ -7,10 +7,31 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	maven { url "https://jitpack.io" }
-	maven {         name 'Xander Maven'
-		url 'https://maven.isxander.dev/releases' }
+	exclusiveContent {
+		forRepository { maven { name = "JitPack"; url = uri("https://jitpack.io") } }
+		filter { includeGroup("com.github.bananaman7582-cmd") }
 	}
+	exclusiveContent {
+		forRepository { maven { name = "Xander Maven"; url = uri("https://maven.isxander.dev/releases") } }
+		filter { includeGroup("dev.isxander") }
+	}
+	exclusiveContent {
+		forRepository { mavenCentral() }
+		filter {
+			includeGroupByRegex("org\\.jetbrains(\\..*)?")
+			includeGroup("com.twelvemonkeys.imageio")
+			includeGroup("com.twelvemonkeys.common")
+		}
+	}
+	exclusiveContent {
+		forRepository { maven { name = "Quilt Maven"; url = uri("https://maven.quiltmc.org/repository/release/") } }
+		filter { includeGroup("org.quiltmc.parsers") }
+	}
+	exclusiveContent {
+		forRepository { maven { name = "Fabric Maven"; url = uri("https://maven.fabricmc.net/") } }
+		filter { includeGroupByRegex("net\\.fabricmc(\\..*)?") }
+	}
+}
 
 	loom {
 		splitEnvironmentSourceSets()
@@ -32,15 +53,15 @@ repositories {
 	dependencies {
 		// To change the versions see the gradle.properties file
 		minecraft "com.mojang:minecraft:${project.minecraft_version}"
-		mappings loom.officialMojangMappings()
-		modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+		implementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
 		// Fabric API. This is technically optional, but you probably want it anyway.
-		modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+		implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
 		//MY dependencies
-		modImplementation "com.github.bananaman7582-cmd:Registry-Helper-Library:${project.registrylib_version}"
-		modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
+		implementation "com.github.bananaman7582-cmd:Registry-Helper-Library:${project.registrylib_version}"
+		include "com.github.bananaman7582-cmd:Registry-Helper-Library:${project.registrylib_version}"
+		implementation "dev.isxander:yet-another-config-lib:${project.yacl_version}"
 	}
 
 	processResources {
@@ -53,7 +74,7 @@ repositories {
 	}
 
 	tasks.withType(JavaCompile).configureEach {
-		it.options.release = 21
+		it.options.release = 25
 	}
 
 	java {
@@ -62,8 +83,8 @@ repositories {
 		// If you remove this line, sources will not be generated.
 		withSourcesJar()
 
-		sourceCompatibility = JavaVersion.VERSION_21
-		targetCompatibility = JavaVersion.VERSION_21
+		sourceCompatibility = JavaVersion.VERSION_25
+		targetCompatibility = JavaVersion.VERSION_25
 	}
 
 	jar {

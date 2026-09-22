@@ -1,6 +1,6 @@
 package com.keyaan;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricDynamicRegistryProvider;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
@@ -17,7 +17,7 @@ public class DataGenMain extends FabricDynamicRegistryProvider{
 
 
     public DataGenMain(
-            FabricDataOutput output,
+            FabricPackOutput output,
             CompletableFuture<HolderLookup.Provider> registriesFuture
     )
     {

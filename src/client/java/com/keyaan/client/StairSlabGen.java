@@ -3,13 +3,13 @@ package com.keyaan.client;
 import com.keyaan.Enditium;
 import com.keyaan.EnditiumBlocks;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 
 public class StairSlabGen extends FabricModelProvider {
 
-    public StairSlabGen(FabricDataOutput output) {
+    public StairSlabGen(FabricPackOutput output) {
         super(output);
     }
 
